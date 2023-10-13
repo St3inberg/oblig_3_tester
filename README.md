@@ -1,7 +1,7 @@
 # oblig_3_git_n_int
 
 
-    This project is configured with automated tests using GitHub Actions. GitHub Actions is a powerful tool that allows you to run tests automatically every time you push new changes to your GitHub repository.
+    This project is configured with automated tests using GitHub Actions. GitHub Actions allows you to run tests automatically every time you push new changes to your GitHub repository.
 
 
     GitHub Actions Configuration (.github/workflows/main.yml):
@@ -12,37 +12,36 @@
         └── workflows
             └── main.yml
 
+# Created Workflow File:
+
+    - Created `main.yml` inside `.github/workflows` to define GitHub Actions workflow.
+
+    # Defined Workflow:
+
+        - Named workflow: "Run Tests".
+        - Configured to trigger on every push event (`on: [push]`).
 
 
-    What Does This Do?
+# Configured Workflow Steps:
 
-    Automated Testing:
+    - Checked out code using `actions/checkout@v2`.
+    - Set up Python 3.8 using `actions/setup-python@v2`.
+    - Installed dependencies from `requirements.txt` using `pip install -r requirements.txt`.
+    - Ran tests with `pytest` command.
 
-    With every commit you push to this repository, GitHub Actions automatically runs tests to ensure your code functions as expected.
+    #Workflow Execution:
 
-    Setup and Dependencies:
+    - Workflow automatically runs on every push, handling code checkout, environment setup, dependency installation, and test execution.
 
-    GitHub Actions sets up Python 3.8 and installs your dependencies from requirements.txt before running the tests.
+    #Monitoring Workflow:
 
-    Test Execution:
+    - Workflow execution monitored in the "Actions" tab of the repository.
+    - Detailed logs available for each run, verifying workflow steps and test results.
 
-    Tests are executed using the pytest framework for Python. Any errors or issues will be displayed in the GitHub Actions logs.
+# Verification:
 
-    How to Check Test Results:
-
-    Make Changes:
-
-    Make changes in your code or create a new commit.
-
-    Push Changes:
-
-    Push the changes to your GitHub repository.
+    - Changes pushed to repository to verify automatic workflow triggering.
+    - Checked "Actions" tab, reviewed logs, and ensured successful test execution.
 
 
-    Check GitHub Actions Tab:
 
-    Visit the "Actions" tab in your GitHub repository to view ongoing and completed GitHub Actions workflows.
-
-    Review the Logs:
-
-    Click on the latest run to view detailed logs. Here, you can see the test results, including any error messages.
