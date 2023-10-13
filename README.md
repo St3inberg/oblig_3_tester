@@ -6,6 +6,14 @@
 
     GitHub Actions Configuration (.github/workflows/main.yml):
 
+    /project-root
+    │
+    └── .github
+        └── workflows
+            └── main.yml
+
+
+
     What Does This Do?
 
     Automated Testing:
